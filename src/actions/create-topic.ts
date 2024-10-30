@@ -43,7 +43,7 @@ export async function createTopic(
   if (!session?.user) {
     return {
       errors: {
-        _form: ['You must be signed in to create a post'],
+        _form: ['You must be signed in to create a topic'],
       },
     };
   }
