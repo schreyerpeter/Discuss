@@ -10,6 +10,7 @@ import {
 } from '@nextui-org/react';
 import * as actions from '@/actions';
 import { useActionState } from 'react';
+import FormButton from '@/components/common/FormButton';
 
 export default function TopicCreateForm() {
   // formData type needs to match server action type
@@ -46,7 +47,7 @@ export default function TopicCreateForm() {
                 {formState.errors._form?.join(', ')}
               </div>
             )}
-            <Button type="submit">Submit</Button>
+            <FormButton>Save</FormButton>
           </div>
         </form>
       </PopoverContent>
